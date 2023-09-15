@@ -8,10 +8,10 @@
 [node name="Camera2D" parent="." instance=ExtResource("1_bh6v0")]
 
 [node name="Seat 0" parent="." instance=ExtResource("2_27iq3")]
-position = Vector2(54, 52)
+position = Vector2(56, 43)
 
 [node name="Seat 1" parent="." instance=ExtResource("2_27iq3")]
 position = Vector2(72, 43)
 
 [node name="Seat 2" parent="." instance=ExtResource("2_27iq3")]
-position = Vector2(105, 50)
+position = Vector2(88, 43)
