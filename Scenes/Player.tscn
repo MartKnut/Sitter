@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://kt1lxvet6i5a"]
+
+[ext_resource type="Texture2D" uid="uid://cs4snuwmm0bx2" path="res://Sprites/Tha_Dude.png" id="1_66jm3"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gr32q"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_66jm3")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[node name="Player" type="AnimatedSprite2D"]
+texture_filter = 1
+position = Vector2(4, 8)
+sprite_frames = SubResource("SpriteFrames_gr32q")
+animation = &"idle"
+autoplay = "idle"

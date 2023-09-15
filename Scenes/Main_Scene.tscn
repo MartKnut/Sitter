@@ -1,0 +1,35 @@
+[gd_scene load_steps=3 format=3 uid="uid://sk2st7inf2js"]
+
+[ext_resource type="PackedScene" uid="uid://c2jct4gcotgkl" path="res://Scenes/Camera.tscn" id="1_bh6v0"]
+[ext_resource type="PackedScene" uid="uid://dxd84uv6rjjm5" path="res://Scenes/Seat.tscn" id="2_27iq3"]
+
+[node name="Main_Scene" type="Node2D"]
+
+[node name="Camera2D" parent="." instance=ExtResource("1_bh6v0")]
+
+[node name="Seat 0" parent="." instance=ExtResource("2_27iq3")]
+position = Vector2(55, 43)
+
+[node name="Seat 1" parent="." instance=ExtResource("2_27iq3")]
+position = Vector2(72, 43)
+
+[node name="Seat 2" parent="." instance=ExtResource("2_27iq3")]
+position = Vector2(89, 43)
+
+[node name="Seat 3" parent="." instance=ExtResource("2_27iq3")]
+position = Vector2(38, 43)
+
+[node name="Seat 4" parent="." instance=ExtResource("2_27iq3")]
+position = Vector2(106, 43)
+
+[node name="Seat 5" parent="." instance=ExtResource("2_27iq3")]
+position = Vector2(21, 43)
+
+[node name="Seat 6" parent="." instance=ExtResource("2_27iq3")]
+position = Vector2(123, 43)
+
+[node name="Seat 7" parent="." instance=ExtResource("2_27iq3")]
+position = Vector2(4, 43)
+
+[node name="Seat 8" parent="." instance=ExtResource("2_27iq3")]
+position = Vector2(140, 43)
