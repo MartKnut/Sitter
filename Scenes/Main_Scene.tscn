@@ -15,21 +15,3 @@ position = Vector2(72, 43)
 
 [node name="Seat 2" parent="." instance=ExtResource("2_27iq3")]
 position = Vector2(89, 43)
-
-[node name="Seat 3" parent="." instance=ExtResource("2_27iq3")]
-position = Vector2(38, 43)
-
-[node name="Seat 4" parent="." instance=ExtResource("2_27iq3")]
-position = Vector2(106, 43)
-
-[node name="Seat 5" parent="." instance=ExtResource("2_27iq3")]
-position = Vector2(21, 43)
-
-[node name="Seat 6" parent="." instance=ExtResource("2_27iq3")]
-position = Vector2(123, 43)
-
-[node name="Seat 7" parent="." instance=ExtResource("2_27iq3")]
-position = Vector2(4, 43)
-
-[node name="Seat 8" parent="." instance=ExtResource("2_27iq3")]
-position = Vector2(140, 43)
