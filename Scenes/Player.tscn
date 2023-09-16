@@ -1,10 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://kt1lxvet6i5a"]
+[gd_scene load_steps=4 format=3 uid="uid://bh28acfgxxahw"]
 
 [ext_resource type="Texture2D" uid="uid://cs4snuwmm0bx2" path="res://Sprites/Tha_Dude.png" id="1_66jm3"]
 [ext_resource type="Texture2D" uid="uid://dx2dwdb4wcdwt" path="res://Sprites/Tha_Dude2.png" id="2_s0nv4"]
-[ext_resource type="Script" path="res://Scripts/PlayerMove.cs" id="3_yx5t8"]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_gr32q"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_mtp0f"]
 animations = [{
 "frames": [{
 "duration": 1.0,
@@ -14,15 +13,9 @@ animations = [{
 "texture": ExtResource("2_s0nv4")
 }],
 "loop": true,
-"name": &"walk",
+"name": &"default",
 "speed": 5.0
 }]
 
-[node name="Player" type="AnimatedSprite2D" node_paths=PackedStringArray("Seats")]
-texture_filter = 1
-sprite_frames = SubResource("SpriteFrames_gr32q")
-animation = &"walk"
-autoplay = "walk"
-frame_progress = 0.202197
-script = ExtResource("3_yx5t8")
-Seats = []
+[node name="Player" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_mtp0f")
