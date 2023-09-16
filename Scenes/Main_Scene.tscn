@@ -1,7 +1,15 @@
-[gd_scene load_steps=3 format=3 uid="uid://sk2st7inf2js"]
+[gd_scene load_steps=6 format=3 uid="uid://sk2st7inf2js"]
 
 [ext_resource type="PackedScene" uid="uid://c2jct4gcotgkl" path="res://Scenes/Camera.tscn" id="1_bh6v0"]
 [ext_resource type="PackedScene" uid="uid://dxd84uv6rjjm5" path="res://Scenes/Seat.tscn" id="2_27iq3"]
+[ext_resource type="Texture2D" path="res://Sprites/Background/Tile.png" id="3_im57o"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ille7"]
+resource_name = "Wall"
+texture = ExtResource("3_im57o")
+
+[sub_resource type="TileSet" id="TileSet_yn32w"]
+sources/1 = SubResource("TileSetAtlasSource_ille7")
 
 [node name="Main_Scene" type="Node2D"]
 
@@ -15,3 +23,8 @@ position = Vector2(72, 43)
 
 [node name="Seat 2" parent="." instance=ExtResource("2_27iq3")]
 position = Vector2(88, 43)
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_yn32w")
+cell_quadrant_size = 6
+format = 2
