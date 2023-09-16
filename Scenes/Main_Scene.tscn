@@ -1,28 +1,25 @@
-[gd_scene load_steps=6 format=3 uid="uid://dkm3yhwg88t40"]
+[gd_scene load_steps=5 format=3 uid="uid://dkm3yhwg88t40"]
 
-[ext_resource type="PackedScene" uid="uid://bqybtg4eb1p4q" path="res://Scenes/StateMachine/GameManager.tscn" id="1_3f3u1"]
+[ext_resource type="PackedScene" uid="uid://bqybtg4eb1p4q" path="res://Scenes/GameManager.tscn" id="1_3f3u1"]
 [ext_resource type="PackedScene" uid="uid://dxd84uv6rjjm5" path="res://Scenes/Seat.tscn" id="1_gknq0"]
-[ext_resource type="Script" path="res://Scripts/GameManager.cs" id="2_4p7ig"]
 [ext_resource type="PackedScene" uid="uid://bh28acfgxxahw" path="res://Scenes/Player.tscn" id="2_mmdpy"]
 [ext_resource type="Script" path="res://Scripts/PlayerInput.cs" id="4_rmhq4"]
 
 [node name="Main_Scene" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("2_mmdpy")]
-position = Vector2(80, 82)
+position = Vector2(80, 72)
 script = ExtResource("4_rmhq4")
 
-[node name="GameManager" parent="." node_paths=PackedStringArray("Player", "Seats") instance=ExtResource("1_3f3u1")]
-script = ExtResource("2_4p7ig")
+[node name="GameManager" parent="." node_paths=PackedStringArray("Player") instance=ExtResource("1_3f3u1")]
 PlayerSeatDistance = -30.0
 Player = NodePath("../Player")
-Seats = []
 
 [node name="Seat" parent="." instance=ExtResource("1_gknq0")]
-position = Vector2(63, 51)
+position = Vector2(64, 40)
 
 [node name="Seat2" parent="." instance=ExtResource("1_gknq0")]
-position = Vector2(79, 51)
+position = Vector2(80, 40)
 
 [node name="Seat3" parent="." instance=ExtResource("1_gknq0")]
-position = Vector2(95, 51)
+position = Vector2(96, 40)
