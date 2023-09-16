@@ -8,5 +8,7 @@ script = ExtResource("1_xhqj7")
 
 [node name="Pillow" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(8, 8)
 texture = ExtResource("1_wli7g")
+
+[node name="PositioningNode" type="Node2D" parent="."]
+position = Vector2(0, 20)

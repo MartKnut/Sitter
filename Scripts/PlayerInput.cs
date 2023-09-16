@@ -2,14 +2,13 @@ using Godot;
 
 namespace Sitter.Scripts;
 
-public partial class Seat : Node2D
+public partial class PlayerInput : AnimatedSprite2D
 {
-	[Export()] public bool Occupied;
+
 	
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
-		Occupied = false;
 		
 	}
 
@@ -17,5 +16,6 @@ public partial class Seat : Node2D
 	public override void _Process(double delta)
 	{
 		
+
 	}
 }
