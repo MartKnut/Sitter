@@ -1,14 +1,13 @@
 [gd_scene load_steps=3 format=3 uid="uid://dxd84uv6rjjm5"]
 
-[ext_resource type="Texture2D" uid="uid://cmenkru7pm482" path="res://Sprites/Pillow.png" id="1_wli7g"]
 [ext_resource type="Script" path="res://Scripts/Seat.cs" id="1_xhqj7"]
+[ext_resource type="Texture2D" uid="uid://b830qtvol5am5" path="res://Sprites/Background/Chair1.png" id="2_m7nix"]
 
 [node name="Seat" type="Node2D"]
+position = Vector2(11.5, 23.5)
 script = ExtResource("1_xhqj7")
 
 [node name="Pillow" type="Sprite2D" parent="."]
+z_index = 2
 texture_filter = 1
-texture = ExtResource("1_wli7g")
-
-[node name="PositioningNode" type="Node2D" parent="."]
-position = Vector2(0, 20)
+texture = ExtResource("2_m7nix")

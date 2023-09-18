@@ -1,25 +1,44 @@
-[gd_scene load_steps=5 format=3 uid="uid://dkm3yhwg88t40"]
+[gd_scene load_steps=8 format=3 uid="uid://dkm3yhwg88t40"]
 
 [ext_resource type="PackedScene" uid="uid://bqybtg4eb1p4q" path="res://Scenes/GameManager.tscn" id="1_3f3u1"]
 [ext_resource type="PackedScene" uid="uid://dxd84uv6rjjm5" path="res://Scenes/Seat.tscn" id="1_gknq0"]
 [ext_resource type="PackedScene" uid="uid://bh28acfgxxahw" path="res://Scenes/Player.tscn" id="2_mmdpy"]
 [ext_resource type="Script" path="res://Scripts/PlayerInput.cs" id="4_rmhq4"]
+[ext_resource type="Texture2D" uid="uid://pptamjoh1s5h" path="res://Sprites/Background/Floor.png" id="5_7a6cl"]
+[ext_resource type="Texture2D" uid="uid://bxrsgugt7leoh" path="res://Sprites/Background/Door.png" id="6_kdaty"]
+[ext_resource type="Texture2D" uid="uid://bq7ktl0o3s5ei" path="res://Sprites/Background/Window.png" id="7_ua7la"]
 
 [node name="Main_Scene" type="Node2D"]
 
-[node name="Player" parent="." instance=ExtResource("2_mmdpy")]
-position = Vector2(80, 72)
-script = ExtResource("4_rmhq4")
+[node name="Door" type="Sprite2D" parent="."]
+position = Vector2(110, 7)
+texture = ExtResource("6_kdaty")
+centered = false
+
+[node name="Floor" type="Sprite2D" parent="."]
+z_index = -825
+position = Vector2(0, 70)
+texture = ExtResource("5_7a6cl")
+centered = false
 
 [node name="GameManager" parent="." node_paths=PackedStringArray("Player") instance=ExtResource("1_3f3u1")]
-PlayerSeatDistance = -30.0
+PlayerSeatDistance = 32.0
 Player = NodePath("../Player")
+TimeToMove = 1.0
 
 [node name="Seat" parent="." instance=ExtResource("1_gknq0")]
-position = Vector2(64, 40)
+position = Vector2(43.5, 75.5)
 
 [node name="Seat2" parent="." instance=ExtResource("1_gknq0")]
-position = Vector2(80, 40)
+position = Vector2(66.5, 75.5)
 
 [node name="Seat3" parent="." instance=ExtResource("1_gknq0")]
-position = Vector2(96, 40)
+position = Vector2(89.5, 75.5)
+
+[node name="Player" parent="." instance=ExtResource("2_mmdpy")]
+position = Vector2(90, 105)
+script = ExtResource("4_rmhq4")
+
+[node name="Window" type="Sprite2D" parent="."]
+position = Vector2(64, 29)
+texture = ExtResource("7_ua7la")
