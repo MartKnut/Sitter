@@ -24,7 +24,6 @@ centered = false
 [node name="GameManager" parent="." node_paths=PackedStringArray("Player") instance=ExtResource("1_3f3u1")]
 PlayerSeatDistance = 32.0
 Player = NodePath("../Player")
-TimeToMove = 1.0
 
 [node name="Seat" parent="." instance=ExtResource("1_gknq0")]
 position = Vector2(43.5, 75.5)
