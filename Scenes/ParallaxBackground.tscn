@@ -1,3 +1,108 @@
-[gd_scene format=3 uid="uid://dj87qaa8ies7c"]
+[gd_scene load_steps=12 format=3 uid="uid://dj87qaa8ies7c"]
+
+[ext_resource type="Script" path="res://Scripts/ParallaxBackground.gd" id="1_7ergb"]
+[ext_resource type="Texture2D" uid="uid://c1afa2js11kbf" path="res://Sprites/Background/Buildings.png" id="2_bc5dn"]
+[ext_resource type="Texture2D" uid="uid://cn0pgwtcpt0yb" path="res://Sprites/Background/Bushes.png" id="3_bgule"]
+[ext_resource type="Texture2D" uid="uid://pptamjoh1s5h" path="res://Sprites/Background/Floor.png" id="4_6sjyi"]
+[ext_resource type="Texture2D" uid="uid://cfci00m2eedlr" path="res://Sprites/Background/Tile.png" id="4_wfox0"]
+[ext_resource type="Texture2D" uid="uid://bxrsgugt7leoh" path="res://Sprites/Background/Door.png" id="5_vkno7"]
+[ext_resource type="Texture2D" uid="uid://bq7ktl0o3s5ei" path="res://Sprites/Background/Window.png" id="6_bab61"]
+[ext_resource type="Texture2D" uid="uid://b830qtvol5am5" path="res://Sprites/Background/Chair1.png" id="7_pbqrq"]
+[ext_resource type="Texture2D" uid="uid://busoo3j5kixqg" path="res://Sprites/Background/Seat2.png" id="8_xtr0j"]
+[ext_resource type="Texture2D" uid="uid://cof03rjkct1xi" path="res://Sprites/Background/Seat3.png" id="9_fqvff"]
+[ext_resource type="Texture2D" uid="uid://cyyaqcois4mvk" path="res://Sprites/Background/Stolpe.png" id="10_24d8q"]
 
 [node name="ParallaxBackground" type="ParallaxBackground"]
+script = ExtResource("1_7ergb")
+
+[node name="Buildings" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.2, 0.2)
+motion_mirroring = Vector2(160, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Buildings"]
+position = Vector2(80, 28)
+texture = ExtResource("2_bc5dn")
+
+[node name="Bushes" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.5, 0.5)
+motion_mirroring = Vector2(160, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Bushes"]
+position = Vector2(80, 35)
+texture = ExtResource("3_bgule")
+
+[node name="Tile" type="Sprite2D" parent="."]
+position = Vector2(80, 3)
+scale = Vector2(26.6667, 1)
+texture = ExtResource("4_wfox0")
+
+[node name="Tile" type="Sprite2D" parent="Tile"]
+position = Vector2(-1.33554, 34.75)
+scale = Vector2(0.0576815, 10.75)
+texture = ExtResource("4_wfox0")
+
+[node name="Tile2" type="Sprite2D" parent="Tile"]
+position = Vector2(1.35, 34.75)
+scale = Vector2(0.0624988, 10.75)
+texture = ExtResource("4_wfox0")
+
+[node name="Tile3" type="Sprite2D" parent="Tile"]
+position = Vector2(1.19062, 3)
+scale = Vector2(0.0343744, 0.666667)
+texture = ExtResource("4_wfox0")
+
+[node name="Tile5" type="Sprite2D" parent="Tile"]
+position = Vector2(1.15312, 2)
+scale = Vector2(0.0343744, 0.666667)
+texture = ExtResource("4_wfox0")
+
+[node name="Tile4" type="Sprite2D" parent="Tile"]
+position = Vector2(1.275, 5)
+scale = Vector2(0.04375, 0.5)
+texture = ExtResource("4_wfox0")
+
+[node name="Tile6" type="Sprite2D" parent="Tile"]
+position = Vector2(-1.19063, 4.75)
+scale = Vector2(0.0468752, 0.583333)
+texture = ExtResource("4_wfox0")
+
+[node name="Tile7" type="Sprite2D" parent="Tile"]
+position = Vector2(-2.97857, 4)
+scale = Vector2(-0.0136897, 0.583333)
+texture = ExtResource("4_wfox0")
+
+[node name="Floor" type="Sprite2D" parent="."]
+position = Vector2(80, 107)
+texture = ExtResource("4_6sjyi")
+
+[node name="Door" type="Sprite2D" parent="."]
+position = Vector2(140, 38)
+texture = ExtResource("5_vkno7")
+
+[node name="Door" type="Sprite2D" parent="Door"]
+position = Vector2(-119, 0)
+texture = ExtResource("5_vkno7")
+
+[node name="Window" type="Sprite2D" parent="."]
+position = Vector2(80, 24)
+texture = ExtResource("6_bab61")
+
+[node name="Seat" type="Sprite2D" parent="."]
+position = Vector2(58, 60)
+texture = ExtResource("7_pbqrq")
+
+[node name="Seat2" type="Sprite2D" parent="Seat"]
+position = Vector2(22, 0)
+texture = ExtResource("8_xtr0j")
+
+[node name="Seat3" type="Sprite2D" parent="Seat"]
+position = Vector2(44, 0)
+texture = ExtResource("9_fqvff")
+
+[node name="Stolpe" type="Sprite2D" parent="."]
+position = Vector2(45, 45)
+texture = ExtResource("10_24d8q")
+
+[node name="Stolpe" type="Sprite2D" parent="Stolpe"]
+position = Vector2(70, 0)
+texture = ExtResource("10_24d8q")
