@@ -16,7 +16,7 @@
 script = ExtResource("1_7ergb")
 
 [node name="Buildings" type="ParallaxLayer" parent="."]
-motion_scale = Vector2(0.2, 0.2)
+motion_scale = Vector2(0.5, 0.5)
 motion_mirroring = Vector2(160, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Buildings"]
@@ -24,7 +24,7 @@ position = Vector2(80, 28)
 texture = ExtResource("2_bc5dn")
 
 [node name="Bushes" type="ParallaxLayer" parent="."]
-motion_scale = Vector2(0.5, 0.5)
+motion_scale = Vector2(5, 5)
 motion_mirroring = Vector2(160, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Bushes"]
@@ -48,6 +48,16 @@ texture = ExtResource("4_wfox0")
 
 [node name="Tile3" type="Sprite2D" parent="Tile"]
 position = Vector2(1.19062, 3)
+scale = Vector2(0.0343744, 0.666667)
+texture = ExtResource("4_wfox0")
+
+[node name="Tile8" type="Sprite2D" parent="Tile"]
+position = Vector2(1.2, 38)
+scale = Vector2(0.0343744, 0.666667)
+texture = ExtResource("4_wfox0")
+
+[node name="Tile9" type="Sprite2D" parent="Tile"]
+position = Vector2(-1.2, 38)
 scale = Vector2(0.0343744, 0.666667)
 texture = ExtResource("4_wfox0")
 
@@ -88,7 +98,7 @@ position = Vector2(80, 24)
 texture = ExtResource("6_bab61")
 
 [node name="Seat" type="Sprite2D" parent="."]
-position = Vector2(58, 60)
+position = Vector2(58, 62)
 texture = ExtResource("7_pbqrq")
 
 [node name="Seat2" type="Sprite2D" parent="Seat"]

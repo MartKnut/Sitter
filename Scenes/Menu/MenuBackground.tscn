@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://c0skn11snayqf"]
+
+[ext_resource type="Script" path="res://Scripts/ParallaxBackground.gd" id="1_bstyp"]
+[ext_resource type="Texture2D" uid="uid://cy3j5v6187mje" path="res://Sprites/MainMenuArt/MainMenuBuilding.png" id="2_tun0r"]
+[ext_resource type="Texture2D" uid="uid://c576iqie5qgvy" path="res://Sprites/MainMenuArt/MainMenuBush.png" id="3_ik22i"]
+[ext_resource type="Texture2D" uid="uid://dhhld13paxjl6" path="res://Sprites/MainMenuArt/MainMenu.png" id="4_8bofb"]
+
+[node name="MenuBackground" type="ParallaxBackground"]
+script = ExtResource("1_bstyp")
+
+[node name="Buildings" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2(250, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Buildings"]
+position = Vector2(86, 31)
+scale = Vector2(1.2619, 1.2619)
+texture = ExtResource("2_tun0r")
+
+[node name="Bushes" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(10, 10)
+motion_mirroring = Vector2(270, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Bushes"]
+position = Vector2(83, 41)
+texture = ExtResource("3_ik22i")
+
+[node name="MainMenu" type="Sprite2D" parent="."]
+position = Vector2(80, 72)
+texture = ExtResource("4_8bofb")

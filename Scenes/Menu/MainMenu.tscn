@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://vjbhwo8khilk"]
+
+[ext_resource type="PackedScene" uid="uid://c0skn11snayqf" path="res://Scenes/Menu/MenuBackground.tscn" id="1_jr743"]
+[ext_resource type="PackedScene" uid="uid://bswjehf67e73k" path="res://Scenes/Menu/Buttons.tscn" id="2_7hukw"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MenuBackground" parent="." instance=ExtResource("1_jr743")]
+
+[node name="Buttons" parent="." instance=ExtResource("2_7hukw")]
+layout_mode = 1
