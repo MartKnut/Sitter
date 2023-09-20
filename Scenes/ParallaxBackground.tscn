@@ -37,13 +37,13 @@ scale = Vector2(26.6667, 1)
 texture = ExtResource("4_wfox0")
 
 [node name="Tile" type="Sprite2D" parent="Tile"]
-position = Vector2(-1.33554, 34.75)
-scale = Vector2(0.0576815, 10.75)
+position = Vector2(-1.31679, 34.75)
+scale = Vector2(0.063931, 10.75)
 texture = ExtResource("4_wfox0")
 
 [node name="Tile2" type="Sprite2D" parent="Tile"]
-position = Vector2(1.35, 34.75)
-scale = Vector2(0.0624988, 10.75)
+position = Vector2(1.33125, 34.75)
+scale = Vector2(0.0562491, 10.75)
 texture = ExtResource("4_wfox0")
 
 [node name="Tile3" type="Sprite2D" parent="Tile"]
@@ -57,8 +57,8 @@ scale = Vector2(0.0343744, 0.666667)
 texture = ExtResource("4_wfox0")
 
 [node name="Tile9" type="Sprite2D" parent="Tile"]
-position = Vector2(-1.2, 38)
-scale = Vector2(0.0343744, 0.666667)
+position = Vector2(-1.19531, 38)
+scale = Vector2(0.0359374, 0.666667)
 texture = ExtResource("4_wfox0")
 
 [node name="Tile5" type="Sprite2D" parent="Tile"]
@@ -67,17 +67,22 @@ scale = Vector2(0.0343744, 0.666667)
 texture = ExtResource("4_wfox0")
 
 [node name="Tile4" type="Sprite2D" parent="Tile"]
-position = Vector2(1.275, 5)
-scale = Vector2(0.04375, 0.5)
+position = Vector2(1.28437, 5)
+scale = Vector2(0.0406253, 0.5)
 texture = ExtResource("4_wfox0")
 
 [node name="Tile6" type="Sprite2D" parent="Tile"]
-position = Vector2(-1.19063, 4.75)
-scale = Vector2(0.0468752, 0.583333)
+position = Vector2(-1.17188, 4.75)
+scale = Vector2(0.0531261, 0.583333)
 texture = ExtResource("4_wfox0")
 
 [node name="Tile7" type="Sprite2D" parent="Tile"]
-position = Vector2(-2.97857, 4)
+position = Vector2(-2.9625, 4)
+scale = Vector2(-0.0136897, 0.583333)
+texture = ExtResource("4_wfox0")
+
+[node name="Tile10" type="Sprite2D" parent="Tile"]
+position = Vector2(2.9625, 4)
 scale = Vector2(-0.0136897, 0.583333)
 texture = ExtResource("4_wfox0")
 
@@ -86,19 +91,19 @@ position = Vector2(80, 107)
 texture = ExtResource("4_6sjyi")
 
 [node name="Door" type="Sprite2D" parent="."]
-position = Vector2(140, 38)
+position = Vector2(138.5, 38)
 texture = ExtResource("5_vkno7")
 
 [node name="Door" type="Sprite2D" parent="Door"]
-position = Vector2(-119, 0)
+position = Vector2(-118, 0)
 texture = ExtResource("5_vkno7")
 
 [node name="Window" type="Sprite2D" parent="."]
-position = Vector2(80, 24)
+position = Vector2(80.5, 24)
 texture = ExtResource("6_bab61")
 
 [node name="Seat" type="Sprite2D" parent="."]
-position = Vector2(58, 62)
+position = Vector2(58.5, 62.5)
 texture = ExtResource("7_pbqrq")
 
 [node name="Seat2" type="Sprite2D" parent="Seat"]
@@ -114,5 +119,5 @@ position = Vector2(45, 45)
 texture = ExtResource("10_24d8q")
 
 [node name="Stolpe" type="Sprite2D" parent="Stolpe"]
-position = Vector2(70, 0)
+position = Vector2(71, 0)
 texture = ExtResource("10_24d8q")
