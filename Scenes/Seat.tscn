@@ -3,11 +3,9 @@
 [ext_resource type="Script" path="res://Scripts/Seat.cs" id="1_xhqj7"]
 [ext_resource type="Texture2D" uid="uid://b830qtvol5am5" path="res://Sprites/Background/Chair1.png" id="2_m7nix"]
 
-[node name="Seat" type="Node2D"]
-position = Vector2(11.5, 23.5)
-script = ExtResource("1_xhqj7")
-
-[node name="Pillow" type="Sprite2D" parent="."]
+[node name="Seat" type="Sprite2D"]
 z_index = 2
 texture_filter = 1
+position = Vector2(0.5, 0)
 texture = ExtResource("2_m7nix")
+script = ExtResource("1_xhqj7")
