@@ -11,11 +11,11 @@ public partial class GameManager : Node
 {
 	public int currentScore;
 
+	[Export()] public float TimeToMove = 1;
+	[Export()] public float timeMultiplier = 0.90f;
 	[Export()] public float PlayerSeatDistance = 30;
 	[Export()] public AnimatedSprite2D Player;
 	[Export()] public Seat[] Seats;
-	[Export()] public float TimeToMove = 1;
-	[Export()] public float timeMultiplier = 0.90f;
 	
 	private bool _moveRight = false;
 	private float currentTime;
@@ -77,6 +77,7 @@ public partial class GameManager : Node
 	private void Lose(int Score)
 	{
 		GetTree().Quit();
+		Timer.Stop();
 	}
 
 	void _on_time_passed()

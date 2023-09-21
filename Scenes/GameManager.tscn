@@ -5,7 +5,6 @@
 [node name="GameManager" type="Node2D" node_paths=PackedStringArray("Seats")]
 script = ExtResource("1_nervi")
 Seats = []
-TimeToMove = 1.0
 
 [node name="Timer" type="Timer" parent="."]
 
