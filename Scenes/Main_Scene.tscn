@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://dkm3yhwg88t40"]
+[gd_scene load_steps=7 format=3 uid="uid://dkm3yhwg88t40"]
 
 [ext_resource type="PackedScene" uid="uid://bqybtg4eb1p4q" path="res://Scenes/GameManager.tscn" id="1_3f3u1"]
 [ext_resource type="PackedScene" uid="uid://dj87qaa8ies7c" path="res://Scenes/ParallaxBackground.tscn" id="1_4x6gw"]
 [ext_resource type="PackedScene" uid="uid://dxd84uv6rjjm5" path="res://Scenes/Seat.tscn" id="1_gknq0"]
 [ext_resource type="PackedScene" uid="uid://bh28acfgxxahw" path="res://Scenes/Player.tscn" id="2_mmdpy"]
+[ext_resource type="Texture2D" uid="uid://cof03rjkct1xi" path="res://Sprites/Background/Seat3.png" id="4_1esep"]
 [ext_resource type="Script" path="res://Scripts/Player.cs" id="5_b4d5p"]
 
 [node name="Main_Scene" type="Node2D"]
@@ -19,6 +20,7 @@ position = Vector2(58.5, 62.5)
 
 [node name="Seat2" parent="." instance=ExtResource("1_gknq0")]
 position = Vector2(81.5, 62.5)
+texture = ExtResource("4_1esep")
 
 [node name="Seat3" parent="." instance=ExtResource("1_gknq0")]
 position = Vector2(104.5, 62.5)

@@ -103,6 +103,7 @@ position = Vector2(80.5, 24)
 texture = ExtResource("6_bab61")
 
 [node name="Seat" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(58.5, 62.5)
 texture = ExtResource("7_pbqrq")
 
